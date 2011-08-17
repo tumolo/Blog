@@ -6,6 +6,11 @@ class ApplicationController < ActionController::Base
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
 	 user_name == 'greg' && password == 'frank'
-   end
   end
+
+  def detect_mobile
+    this will authenticate mobile versions once code is written
+  end
+  
 end
+  
